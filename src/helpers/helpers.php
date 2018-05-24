@@ -65,4 +65,18 @@ trait helpers{
         $a = database::executeQuery($q);
         return $a[0]['idPropTipo'];
     }
+
+    /**
+     * 
+     */
+    static function setOficina($value){
+        switch($value){
+            case 16: return 2055;
+            case 7474: return 1339;
+            case 83046: return 2056;
+            case 7473: return 1338;
+            case 194712: return 2952;
+            case 512998: return 2953;
+        }
+    }
 }
